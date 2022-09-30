@@ -1,0 +1,40 @@
+.mail-tool-container {
+  height: 100%;
+  width: 100%;
+}
+
+.mail-tool-container .row {
+  max-width: 100%;
+}
+
+.email-box-wrapper {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.invalidEmail {
+  border-color: red;
+}
+
+.email-textArea,
+.email-textArea:focus {
+  border: none;
+  outline: none;
+  padding: 5px;
+  min-width: 230px;
+  width: auto;
+}
+
+.email-box-error {
+  color: red;
+}
+
+.email-unsubscribe-link {
+  background: #6929C4;
+  color: white;
+}
+
+.email-unsubscribe-link:hover {
+  background: #35017eae;
+  color: white;
+}

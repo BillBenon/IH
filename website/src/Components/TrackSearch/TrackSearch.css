@@ -1,0 +1,251 @@
+.input-box {
+  height: 100%;
+  border: 0;
+  width: 100%;
+  background: transparent;
+  padding: 0 10px;
+  outline: none !important;
+}
+.input-box::placeholder {
+  color: "rgba(17, 17, 17, 0.48)";
+}
+
+.input-wrapper {
+  border: 0.5px solid #c4c4c4;
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
+    0px 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 40px;
+  height: 56px;
+  padding: 10px 0px 10px 20px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.inputDrop {
+  width: 60px;
+  height: 56px;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filter-icon {
+  color: rgba(196, 196, 196, 1);
+  width: 28px !important;
+}
+
+.dropdown-frame {
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(51, 51, 51, 0.04))
+    drop-shadow(0px 4px 24px rgba(51, 51, 51, 0.24));
+  background: #fff;
+  position: absolute;
+  width: 670px;
+  top: 56px;
+  margin: auto;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+}
+
+.dropdown-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #111111;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dropdown-item:hover {
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #315cd5;
+}
+
+.check-icon {
+  color: rgba(49, 92, 213, 1);
+  width: 24px !important;
+}
+
+.dropdownWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.slide {
+  background: transparent !important;
+}
+
+.control-arrow {
+  color: #111111 !important;
+}
+
+.carousel-wrapper {
+  height: 21px;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.tagItem {
+  font-size: 18px;
+  line-height: 21px !important;
+  text-decoration-line: underline;
+  color: #315cd5;
+  margin: 0px 19px;
+  cursor: pointer;
+  white-space: pre;
+}
+
+.carousel-wrapper .alice-carousel__stage-item {
+  width: fit-content !important;
+}
+
+.carousel-wrapper .alice-carousel__prev-btn {
+  position: absolute;
+  top: -27px;
+  text-align: left !important;
+  font-size: 2rem;
+  left: 0;
+  color: #315cd5;
+  width: auto !important;
+}
+
+.carousel-wrapper .alice-carousel__next-btn:hover {
+  width: auto !important;
+}
+
+.carousel-wrapper .alice-carousel__prev-btn:hover {
+  width: auto !important;
+}
+
+.carousel-wrapper .alice-carousel__next-btn {
+  position: absolute;
+  top: -27px;
+  text-align: right !important;
+  font-size: 2rem;
+  right: 0;
+  width: auto !important;
+  color: #315cd5;
+}
+
+.carousel-wrapper .alice-carousel__next-btn-wrapper {
+  padding-top: 5px;
+}
+.carousel-wrapper .alice-carousel__prev-btn-wrapper {
+  padding-top: 5px;
+}
+
+.carousel-wrapper .alice-carousel > div:first-child {
+  margin: 40px !important;
+}
+
+.divider {
+  margin: 40px 0px !important;
+}
+
+#landing-root {
+  background: rgba(252, 253, 255, 1) !important;
+}
+
+.heading1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  color: #18191f;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.heading2 {
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  color: #767676;
+  white-space: pre;
+  text-align: center;
+  font-weight: normal;
+}
+
+.search-wrapper {
+  width: 100%;
+}
+
+.margin-control {
+  margin-top: 40px;
+}
+
+@media (max-width: 980px) {
+  .inputDrop {
+    width: 60px;
+    height: 57px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-frame {
+    width: 100%;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .heading2 {
+    white-space: unset;
+    font-size: 14px;
+    text-align: center;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+  .inputDrop {
+    width: 72px;
+    height: 56px;
+    border: 0.5px solid #c4c4c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  .heading1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-transform: capitalize;
+    font-feature-settings: "salt" on, "liga" off;
+  }
+  .margin-control {
+    margin-top: 50px;
+  }
+  .input-box {
+    font-size: 10px;
+  }
+  .dropdown-item {
+    font-size: 12px;
+  }
+  .boxwrapper {
+    width: 100%;
+  }
+}

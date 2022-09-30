@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://interviewhelp.io/sitemap.xml
+Sitemap: https://www.interviewhelp.io/blog/sitemap.xml 
+Sitemap: https://www.interviewhelp.io/sitemap-track.xml.gz

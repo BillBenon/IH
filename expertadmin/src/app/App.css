@@ -1,0 +1,7 @@
+.ql-snow .ql-tooltip{
+    left: 0 !important;
+  }
+
+.ql-active{
+  user-select: none !important;
+}

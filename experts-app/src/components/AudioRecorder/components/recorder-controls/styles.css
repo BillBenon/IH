@@ -1,0 +1,25 @@
+.recorder-display {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #b1b1b1;
+  font-weight: 600;
+  flex-direction: column;
+}
+
+.cancel-button {
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50% !important;
+}
+
+.start-button {
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50% !important;
+}
+
+.audio-analyzer {
+  height: 50px;
+  width: 100%;
+}

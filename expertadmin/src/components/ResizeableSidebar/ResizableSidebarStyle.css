@@ -1,0 +1,43 @@
+.SplitPane.vertical {
+  align-items: center;
+}
+
+.Pane {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.Pane1  {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  overflow-y: auto;
+}
+
+.Resizer {
+  background: #000;
+  opacity: 0.8;
+  z-index: 1;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+
+.Resizer.vertical {
+  width: 16px;
+  cursor: col-resize;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Resizer.vertical::after {
+  content: "||";
+}
+
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}

@@ -1,0 +1,12 @@
+.module-wrapper {
+    pointer-events: all !important;
+    height: 42vh !important;
+    overflow: auto !important;
+}
+
+.modal-dialog {
+    width: 50rem !important;
+    max-width: 50rem !important;
+    height: 100vh;
+    margin: auto;   
+}

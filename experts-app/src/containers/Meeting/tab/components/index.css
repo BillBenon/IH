@@ -1,0 +1,62 @@
+.module-selector div.fade.in.modal {
+    display: flex !important;
+}
+
+.module-selector .modal-dialog {
+    width: 50rem !important;
+    max-width: 50rem !important;
+    height: 100vh;
+    margin: auto;
+}
+
+.module-selector .modal-body {
+    height: calc(100vh - 4rem);
+    overflow: hidden;
+}
+
+.module-selector .module-selection-container {
+    height: calc(100vh - 7.5rem);
+    overflow: hidden;
+}
+
+.minimize-css {
+    display: none !important;
+}
+
+.module-selector .capability-selection-container {
+    height: calc(46vh - 7.5rem);
+    overflow: auto;
+}
+
+.floating {
+    position: fixed;
+    top: 55px;
+    width: 46rem;
+}
+
+.moduleSelectionBody {
+    position: relative;
+    top: 9rem;
+    overflow: scroll;
+    width: 46rem;
+    height: 66vh;
+}
+
+.customQuestionSelection {
+    position: absolute;
+    top: 4rem;
+    height: 27vh;
+    width: 46rem;
+    overflow: auto;
+}
+
+.floating-question {
+    position: fixed;
+    top: 28rem;
+    width: 45rem;
+}
+
+.custom-question-body {
+    height: calc(100vh - 13rem);
+    overflow: auto;
+}

@@ -1,0 +1,46 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  
+  .tab {
+    background: transparent;
+    padding: 5px 15px;
+    color: #1122ff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    padding: 15px 5px;
+  }
+  
+  .tab.active {
+    
+  }
+  
+  .nav-tabs {
+    margin-top: 10px;
+  }
+  
+  .add-tab-button {
+    background: none;
+    border: none;
+  }
+  
+  .edit-mode-button {
+    background: #1122ff;
+    color: #fff;
+  }
+  
+  .save-button {
+    background: green;
+    color: #fff;
+  }
+  
+  .edit-tab-name {
+    background: #1122ff;
+    color: #fff;
+  }
+  

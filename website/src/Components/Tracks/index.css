@@ -1,0 +1,103 @@
+.happy-customer .alice-carousel {
+  text-align: center;
+}
+
+.happy-customer .alice-carousel__next-btn-wrapper,
+.plans .alice-carousel__next-btn-wrapper {
+  width: 32px;
+  font-family: 'Gilroy-Bold' !important;
+  }
+
+.happy-customer .alice-carousel__prev-btn-item, .happy-customer .alice-carousel__next-btn-item, .plans .alice-carousel__prev-btn-item, .plans .alice-carousel__next-btn-item {
+  font-family: 'Gilroy-Bold' !important;
+
+}
+.happy-customer .alice-carousel__prev-btn-item, .happy-customer .alice-carousel__next-btn-item, .plans .alice-carousel__prev-btn-item, .plans .alice-carousel__next-btn-item {
+  font-family: 'Gilroy-Bold' !important;
+}
+
+
+.happy-customer .alice-carousel__prev-btn-item,
+.happy-customer .alice-carousel__next-btn-item,
+.plans .alice-carousel__prev-btn-item,
+.plans .alice-carousel__next-btn-item {
+  padding: 8px;
+  font-weight: bolder;
+}
+
+.happy-customer .alice-carousel__prev-btn-item,
+.happy-customer .alice-carousel__next-btn-item,
+.plans .alice-carousel__prev-btn-item,
+.plans .alice-carousel__next-btn-item {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+}
+
+.happy-customer .alice-carousel__prev-btn-item:hover,
+.happy-customer .alice-carousel__next-btn-item:hover,
+.plans .alice-carousel__prev-btn-item:hover,
+.plans .alice-carousel__next-btn-item:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .happy-customer .alice-carousel__stage-item {
+    margin-left: 0px;
+  }
+}
+
+.plans .alice-carousel__stage-item {
+  padding: 0.1rem;
+}
+
+.MuiBadge-colorPrimary {
+  width: 2.2rem !important;
+  height: 2.2rem !important;
+  border-radius: 50% !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  font-family: 'Gilroy-Bold' !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  background: rgb(0 0 0 / 50%);
+  padding: 1.5rem 0 1rem;
+  transition: all .5s ease-out;
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 5%);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+@media (min-width: 601px) {
+  .sticky > .makeStyles-heading-42 {
+    color: white;
+  }
+  
+  .sticky > .makeStyles-subHeading-26 {
+    color: white;
+  }
+}
+
+@media (min-width: 601px) {
+  .sticky > div {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 600px) {
+   .sticky {
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(3, 3, 3, 0.05);
+    display: block;
+    background: #FFF;
+    z-index: 2;
+  }
+}

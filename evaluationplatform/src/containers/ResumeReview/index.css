@@ -1,0 +1,12 @@
+.fs-6 {
+    font-size: 1.075rem!important;
+}
+
+.separator.separator-dashed {
+    border-bottom-style: dashed;
+    border-bottom-color: #e4e6ef;
+}
+
+.fw-bold {
+    font-weight: 500!important;
+}

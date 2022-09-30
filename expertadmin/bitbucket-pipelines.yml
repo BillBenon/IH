@@ -1,0 +1,108 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:10.15.0
+definitions:
+  steps:
+    - step: &ProdSetup
+        deployment: production
+        name: Setting up the environment make the build and deployment
+        caches:
+          - node
+        script:
+          - apt-get update
+          - apt-get install python
+          - python --version
+          - apt-get -y install python-dev
+          - apt-get -y install python-pip
+          - pip install awscli
+          - pip --help
+          - unset CI
+          - npm install
+          - npm run build:production
+          - aws --version
+          - echo $awsbucket
+          - aws --region us-west-2 s3 sync ./build  s3://$awsbucket/ --acl public-read --exclude ".vscode/*" --exclude ".git/*" --exclude ".gitattributes" --exclude ".gitignore" --exclude ".editorconfig" --exclude "node_modules" --exclude "yarn.lock" --exclude "package.json" --exclude "bitbucket-pipelines.yml"
+    - step: &TestSetup
+        deployment: test
+        name: Setting up the environment make the build and deployment
+        caches:
+          - node
+        script:
+          - apt-get update
+          - apt-get install python
+          - python --version
+          - apt-get -y install python-dev
+          - apt-get -y install python-pip
+          - pip install awscli
+          - pip --help
+          - unset CI
+          - npm install
+          - npm run build
+          - aws --version
+          - echo $awsbucket
+          - aws --region us-west-2 s3 sync ./build  s3://$awsbucket/ --acl public-read --exclude ".vscode/*" --exclude ".git/*" --exclude ".gitattributes" --exclude ".gitignore" --exclude ".editorconfig" --exclude "node_modules" --exclude "yarn.lock" --exclude "package.json" --exclude "bitbucket-pipelines.yml"
+    - step: &StagingSetup
+        deployment: staging
+        name: Setting up the environment make the build and deployment
+        caches:
+          - node
+        script:
+          - apt-get update
+          - apt-get install python
+          - python --version
+          - apt-get -y install python-dev
+          - apt-get -y install python-pip
+          - pip install awscli
+          - pip --help
+          - unset CI
+          - npm install
+          - npm run build:staging
+          - aws --version
+          - echo $awsbucket
+          - aws --region us-west-2 s3 sync ./build  s3://$awsbucket/ --acl public-read --exclude ".vscode/*" --exclude ".git/*" --exclude ".gitattributes" --exclude ".gitignore" --exclude ".editorconfig" --exclude "node_modules" --exclude "yarn.lock" --exclude "package.json" --exclude "bitbucket-pipelines.yml"
+    - step: &DefaultSetup
+        deployment: test
+        name: Setting up the environment make the build and deployment
+        caches:
+          - node
+        script:
+          - apt-get update
+          - apt-get install python
+          - python --version
+          - apt-get -y install python-dev
+          - apt-get -y install python-pip
+          - pip install awscli
+          - pip --help
+          - unset CI
+          - npm install
+          - npm run build
+          - aws --version
+          - echo $awsbucket
+          - aws --region us-west-2 s3 sync ./build  s3://$awsbucket/$BITBUCKET_BRANCH --acl public-read --exclude ".vscode/*" --exclude ".git/*" --exclude ".gitattributes" --exclude ".gitignore" --exclude ".editorconfig" --exclude "node_modules" --exclude "yarn.lock" --exclude "package.json" --exclude "bitbucket-pipelines.yml"
+
+pipelines:
+  default:
+    - step: *DefaultSetup
+      deployment: test
+      name: all feature branch deployment
+  branches:
+    release/test:
+      - step: *TestSetup
+        deployment: test
+        name: Test deployment
+    master:
+      - step: *ProdSetup
+        deployment: production
+        name: production deployment
+    release/staging:
+      - step: *StagingSetup
+        deployment: staging
+        name: staging deployment

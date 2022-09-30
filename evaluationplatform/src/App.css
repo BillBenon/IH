@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.ql-snow .ql-tooltip{
+  left: 0 !important;
+}
+
+.modal-content {
+  width: 115% !important;
+}

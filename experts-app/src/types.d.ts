@@ -1,0 +1,1 @@
+declare module '@vidyard/embed-code';

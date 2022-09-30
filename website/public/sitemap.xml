@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<url>
+		<loc>https://www.interviewhelp.io/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+
+	
+	<url>
+		<loc>https://www.interviewhelp.io/blog/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+
+	<url>
+		<loc>https://www.interviewhelp.io/Faq/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	
+	<url>
+		<loc>https://www.interviewhelp.io/behavioral-coaching/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+
+	<url>
+		<loc>https://www.interviewhelp.io/sdm-core/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	
+	<url>
+		<loc>https://www.interviewhelp.io/interview-sde/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+
+	<url>
+		<loc>https://www.interviewhelp.io/system-design/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+
+	<url>
+		<loc>https://www.interviewhelp.io/tpm-core/</loc>
+		<lastmod>2020-06-20T01:57:54+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+		<loc>https://www.interviewhelp.io/track/Technical-Program-Manager</loc>
+		<lastmod>2021-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+        </url>
+	<url>
+		<loc>https://www.interviewhelp.io/track/Technical-Program-Manager</loc>
+		<lastmod>2021-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+        </url>
+	<url>
+		<loc>https://www.interviewhelp.io/track/Bungee-senior-full-stack-engineer</loc>
+		<lastmod>2021-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+        </url>
+	<url>
+		<loc>https://www.interviewhelp.io/track/Bungee-senior-full-stack-engineer</loc>
+		<lastmod>2021-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+        </url>
+	<url>
+		<loc>https://www.interviewhelp.io/track/software-development-engineer</loc>
+		<lastmod>2021-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+        </url>
+	<url>
+		<loc>https://www.interviewhelp.io/track/amazon-behavior-interview</loc>
+		<lastmod>2021-06-20T01:57:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+        </url>
+
+</urlset>

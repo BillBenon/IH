@@ -1,0 +1,8 @@
+{
+    "debug.console.fontSize": 14,
+    "markdown.preview.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "editor.letterSpacing": 0.5,
+    "editor.fontWeight": "normal",
+    "editor.tokenColorCustomizations": null
+}

@@ -1,0 +1,31 @@
+#signin-linkedin-button {
+  padding: 0;
+  background-color: #008CC9;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signin-linkedin-button:hover {
+  background-color: #0077B5;
+}
+
+#signin-linkedin-button > .button-logo {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border-right: 2px solid #005E93;
+  background-color: #008CC9;
+}
+
+#signin-linkedin-button > .button-logo img {
+  width: 2rem;
+}
+
+#signin-linkedin-button > .button-text {
+  padding: 0 1rem;
+  color: white;
+  font-weight: 700;
+}

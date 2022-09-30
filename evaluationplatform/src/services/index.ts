@@ -1,0 +1,12 @@
+export { authService } from './auth';
+export { evaluationPlatformService } from './evaluationPlatform';
+export { candidateService } from './candidate';
+export { candidateTrackService } from './candidateTrack';
+export { capabilityService } from './capability';
+export { expertService } from './expert';
+export { feedbackService } from './feedback';
+export { metadataService } from './metadata';
+export { questionService } from './question';
+export { questionAnswerService } from './questionAnswer';
+export { trackService } from './track';
+export { pdfService } from './pdf';

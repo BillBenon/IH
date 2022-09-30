@@ -1,0 +1,1 @@
+export { default as CapabilitiesModal, CapabilityLink } from './CapabilitiesModal';

@@ -1,0 +1,93 @@
+.recordings-container {
+  height: 85%;
+}
+
+.recordings-container h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.no-records {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.recordings-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.recordings-list::-webkit-scrollbar-track {
+  background: #e4d3cf;
+}
+
+.recordings-list::-webkit-scrollbar-thumb {
+  background: #099fff;
+}
+
+.recordings-list {
+  display: grid;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.record {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.record audio {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.delete-button-container {
+  min-width: 20%;
+  max-width: 10%;
+  display: grid;
+  place-content: center;
+}
+
+.delete-button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.undo-button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #fd1c03;
+}
+
+.undo-button:hover {
+  color: #28a745;
+}
+
+.deleted-record > audio {
+  opacity: .3;
+}
+
+.user-audio {
+  width: 200px !important;
+  height: 50px !important
+}
+
+.width-10 {
+  width: 10px;
+}

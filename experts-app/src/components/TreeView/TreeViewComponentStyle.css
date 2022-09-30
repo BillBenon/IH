@@ -1,0 +1,42 @@
+.rc-tree .rc-tree-treenode {
+  white-space: unset !important;
+  align-items: baseline !important;
+}
+
+.rc-tree-treenode {
+  display: flex !important;
+}
+
+.rc-tree-list {
+  color: rgba(0, 0, 0, 0.8)  !important;
+}
+
+.rc-tree-iconEle {
+  display: none !important;
+}
+
+.rc-tree .rc-tree-treenode span.rc-tree-switcher.rc-tree-switcher_open,
+.rc-tree .rc-tree-treenode span.rc-tree-switcher.rc-tree-switcher_close {
+  background-position: -93px 100px !important;
+}
+
+.rc-tree .rc-tree-treenode .rc-tree-node-content-wrapper {
+  height: auto !important; /* for title break-word */
+}
+
+.rc-tree-title {
+  width: 21rem !important;
+  position: relative !important;
+  cursor: auto !important;
+}
+
+.rc-tree-node-selected {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.rc-tree-node-selected p {
+  font-weight: bold !important;
+}
